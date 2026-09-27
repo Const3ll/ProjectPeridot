@@ -1,1 +1,16 @@
+[build]
+  # The command to build your project (e.g., npm run build, next build, vite build, etc.)
+  command = "npm run build"
+  
+  # The directory containing the final static build output (e.g., dist, build, .next, public)
+  publish = "dist"
 
+# Optional: Set environment variables accessible during build
+[build.environment]
+  NODE_VERSION = "20"
+
+# Optional: Define redirect rules (useful for Single Page Applications like React/Vue/Vite)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
